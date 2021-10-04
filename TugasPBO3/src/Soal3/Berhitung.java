@@ -25,31 +25,35 @@ public class Berhitung {
 	        int hasil = 0;
 	        
 	        
-	        
-	        //Pengkondisian
-	        //Membandingkan string 
-	        if(operator.equals("+")) {
-	        	hasil = a+b;
-	        }else if(operator.equals("-")) {
-	        	hasil = a-b;
-	        }else if(operator.equals("*")) {
-	        	hasil = a*b;
-	        }else if(operator.equals("/")) {
-	        	hasil = a/b;
-	        }else if(operator.equals("%")) {
-	        	hasil = a%b;
-	        }else {
-	        	System.out.println("Operasi yang anda masukkan mungkin salah");
-	        }
-	        /*
-	         * Note :
-	         * Tidak menggunakan tanda == untuk membandingkan suatu string sama atau tidak\
-	         * tetapi menggunakan equals. karena kalau membandingkan dengan ==,
-	         * ,maka akan membandingkan alamat atau address dari kedua yang dibandingkan */
-	        
+	         if(a>=1 && b<=1000) {
+					//Pengkondisian
+					//Membandingkan string 
+					if(operator.equals("+")) {
+						hasil = a+b;
+					}else if(operator.equals("-")) {
+						hasil = a-b;
+					}else if(operator.equals("*")) {
+						hasil = a*b;
+					}else if(operator.equals("/")) {
+						hasil = a/b;
+					}else if(operator.equals("%")) {
+						hasil = a%b;
+					}else {
+						System.out.println("Operasi yang anda masukkan mungkin salah");
+					}
+					/*
+					* Note :
+					* Tidak menggunakan tanda == untuk membandingkan suatu string sama atau tidak\
+					* tetapi menggunakan equals. karena kalau membandingkan dengan ==,
+					* ,maka akan membandingkan alamat atau address dari kedua yang dibandingkan */
+					
 
-	       //mencetak hasil
-	       System.out.println(hasil);
+				//mencetak hasil
+				System.out.println(hasil);
+		     }else{
+	        	System.out.println("Melebihi batasan");
+	        }
+	        
 		
 	}
 
